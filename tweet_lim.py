@@ -13,7 +13,7 @@ def get_tweets(screen_name):
 	api = tweepy.API(ath)
 	#making api call
 	tweets = []	
-	tweets_new = api.user_timeline(screen_name = screen_name,count=10)
+	tweets_new = api.user_timeline(screen_name = screen_name,count=50)
 	
 	tweets.extend(tweets_new)
 	#extending list to store tweets
